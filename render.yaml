@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: chatapp-backend
+    env: node
+    region: oregon
+    plan: starter
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: GOOGLE_GENERATIVE_AI_KEY
+        scope: build
+      - key: PORT
+        value: 10000

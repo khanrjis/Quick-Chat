@@ -1,5 +1,5 @@
 import React from 'react'
-import "./seperation.css"
+import "./Seperation.css"
 function Seperation() {
   return (
     <div className='seperation'></div>
