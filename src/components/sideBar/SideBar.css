@@ -1,0 +1,125 @@
+.sidebar{
+    height:100vh;
+    width:80px;
+    background:#0d1819;
+    color:white;
+    padding:20px 12px;
+    transition:all 0.3s ease;
+    display:flex;
+    flex-direction:column;
+    font-family: "Segoe UI", sans-serif;
+}
+ 
+.sidebar.extended{
+    width:200px;
+}
+
+
+.top-section{
+    margin-bottom:20px;
+}
+ 
+
+.hamburger-icon{
+    cursor:pointer;
+    padding:8px;
+    border-radius:8px;
+    transition:0.2s;
+}
+
+.hamburger-icon:hover{
+    background:#343541;
+}
+ 
+.newchat{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:10px;
+    transition:0.2s;
+}
+
+.newchat:hover{
+    background:#343541;
+}
+
+ 
+
+.recent-section{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+}
+ 
+.recent-title{
+    font-size:14px;
+    color:#9ca3af;
+    margin-bottom:12px;
+}
+ 
+.recent-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.2s;
+}
+
+.recent-item:hover{
+    background:#343541;
+}
+ 
+.sidebar svg{
+    font-size:22px;
+}
+ 
+
+.sidebar span{
+    white-space:nowrap;
+}
+
+.sidebar button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.chat-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    text-align: left;
+}
+
+.recent-item-description {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    white-space: normal;
+    line-height: 1.2;
+    max-width: 120px;
+}
+
+.recent-item.active,
+.newchat:hover,
+.recent-item:hover {
+    background: #343541;
+}
+
+.recent-item.active {
+    border-left: 3px solid #7b61ff;
+}
+
